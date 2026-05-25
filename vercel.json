@@ -1,0 +1,11 @@
+{
+  "rewrites": [
+    { "source": "/api/(.*)", "destination": "/api/$1" },
+    { "source": "/(.*)", "destination": "/" }
+  ],
+  "functions": {
+    "api/analyze-images.js": { "maxDuration": 60 },
+    "api/analyze-file.js":   { "maxDuration": 60 },
+    "api/analyze.js":        { "maxDuration": 60 }
+  }
+}
